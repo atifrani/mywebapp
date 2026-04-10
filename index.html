@@ -608,6 +608,8 @@
       }
     }
   </style>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body>
   <header class="topbar">
@@ -867,54 +869,32 @@
     </section>
 
     <section id="contact">
-      <div class="container contact-grid">
-        <article class="card contact-card">
-          <div class="section-head" style="margin-bottom:0;">
-            <h2>Contact & réservation</h2>
-            <p>Expliquez-nous votre projet, nous reviendrons vers vous avec une proposition adaptée.</p>
+      <div class="container">
+        <div class="section-head">
+          <h2>Réservez un créneau avec notre équipe</h2>
+          <p>
+            Choisissez directement un rendez-vous pour échanger sur votre événement,
+            vérifier les disponibilités et recevoir une proposition adaptée.
+          </p>
+        </div>
+
+        <article class="card" style="padding: 1.2rem;">
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/logbrain/free-tech-consulting"
+               style="min-width:320px;height:760px;">
           </div>
-          <ul>
-            <li><strong>Email :</strong> contact@licorneprestige.fr</li>
-            <li><strong>Téléphone :</strong> 01 89 00 00 00</li>
-            <li><strong>Horaires :</strong> Lun - Sam, 9h00 à 19h00</li>
-            <li><strong>Zone :</strong> Paris, Île-de-France et déplacements nationaux</li>
-          </ul>
         </article>
 
-        <article class="card">
-          <form class="form">
-            <div class="form-row">
-              <label>
-                Nom
-                <input type="text" placeholder="Votre nom" />
-              </label>
-              <label>
-                Email
-                <input type="email" placeholder="Votre email" />
-              </label>
-            </div>
-            <div class="form-row">
-              <label>
-                Type d’événement
-                <select>
-                  <option>Anniversaire</option>
-                  <option>Baptême</option>
-                  <option>Mariage</option>
-                  <option>Événement d’entreprise</option>
-                  <option>Autre</option>
-                </select>
-              </label>
-              <label>
-                Date souhaitée
-                <input type="date" />
-              </label>
-            </div>
-            <label>
-              Votre message
-              <textarea placeholder="Décrivez votre événement, le lieu, le nombre d’invités et vos attentes."></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
-          </form>
+        <article class="card" style="margin-top: 1.25rem;">
+          <h3 style="margin-bottom: 0.75rem;">Informations pratiques</h3>
+          <p style="color: var(--muted); margin-bottom: 0.75rem;">
+            Remplacez l’URL <strong>https://calendly.com/votre-compte/demo</strong>
+            par votre lien Calendly réel pour activer la prise de rendez-vous.
+          </p>
+          <p style="color: var(--muted);">
+            Vous pouvez utiliser un lien vers un événement individuel, une page d’équipe,
+            ou un type de rendez-vous spécifique selon vos besoins.
+          </p>
         </article>
       </div>
     </section>
